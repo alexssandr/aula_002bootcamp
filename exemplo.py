@@ -45,7 +45,16 @@ import math
 # print(media_numeros)
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+# numero_1 = int(input('Digite a base:'))
+# numero_2 = int(input('Digite o expoente:'))
+# print(math.pow(numero_1,numero_2))
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+# celsius = int(input("Enter the Temperature in Celsius:\n"))
+# fahrenheit_temperature = (1.8 * celsius) + 32
+# print(fahrenheit_temperature)
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 # raio = float(input('Digite o raio: '))
 # area_circulo = math.pi * raio **2
@@ -88,11 +97,50 @@ import math
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+# numero_1 = int(input('Digite o primeiro numero: \n'))
+# numero_2 = int(input('Digite o segundo numero: \n'))
+
+# if numero_1 == numero_2:
+#     print('numeros iguais')
+# else:
+#     print('numeros diferentes')
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+# try:
+#     celsius = int(input("Enter the Temperature in Celsius:\n"))
+#     fahrenheit_temperature = (1.8 * celsius) + 32
+#     print(fahrenheit_temperature)
+# except ValueError:
+#     print('valor incorreto')
+
 # 22: Verificador de Palíndromo
+# entrada = input("Digite uma palavra ou frase:\n")
+# if isinstance(entrada, str):
+#     print('é um texto')
+# else:
+#     print('nao é um texto')
 # 23: Calculadora Simples
+try:
+    num1 = float(input('Digite o primeiro numero:\n'))
+    num2 = float(input('Digite o segundo numero:\n'))
+    operador = input('Digite o operador (+ - * /):\n')
+    
+    if operador == '+':
+        resultado = num1 + num2
+    elif operador == '-':
+        resultado = num1 - num2
+    elif operador == '*':
+        resultado = num1 * num2
+    elif operador == '-':
+        resultado = num1 / num2
+
+    print(resultado)
+except:
+    print('erro no processamento')
+    
+
+
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
